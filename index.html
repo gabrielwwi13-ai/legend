@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minha Página</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  color: white;
+  background:
+    radial-gradient(ellipse at 15% 55%, #63300f 0%, transparent 48%),
+    radial-gradient(ellipse at 90% 80%, #210b0b 0%, transparent 50%),
+    #080606;
+  padding: 45px 20px;
+}
+
+.container {
+  max-width: 650px;
+  margin: auto;
+  text-align: center;
+}
+
+.profile {
+  width: 155px;
+  height: 155px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #5b171f;
+  margin: 30px auto 25px;
+  background: #42121b;
+}
+
+h1 {
+  font-size: 38px;
+  margin-bottom: 55px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.link {
+  min-height: 112px;
+  border: 1.5px solid white;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 14px;
+  color: white;
+  text-decoration: none;
+  background: rgba(255,255,255,0.025);
+  transition: 0.2s;
+}
+
+.link:active {
+  background: rgba(255,255,255,0.15);
+}
+
+.thumb {
+  width: 82px;
+  height: 82px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  background: #252525;
+}
+
+.info {
+  flex: 1;
+  text-align: center;
+}
+
+.info strong {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.info p {
+  color: #bbb;
+  font-size: 15px;
+  margin-top: 7px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  margin-top: 55px;
+}
+
+.socials a {
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer {
+  margin-top: 50px;
+  color: #888;
+  font-size: 12px;
+}
+
+@media(max-width: 400px) {
+  h1 { font-size: 30px; }
+  .link { min-height: 95px; }
+  .thumb { width: 65px; height: 65px; }
+  .info strong { font-size: 16px; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- FOTO DE PERFIL -->
+  <img class="profile"
+  src="https://placehold.co/300x300/42121b/ffffff?text=FOTO"
+  alt="Foto de perfil">
+
+  <!-- NOME -->
+  <h1>@seuusuario</h1>
+
+  <!-- LINKS -->
+  <div class="links">
+
+    <a class="link" href="https://kick.com/">
+      <div class="thumb">🎮</div>
+      <div class="info">
+        <strong>MINHA KICK &lt;3</strong>
+      </div>
+    </a>
+
+    <a class="link" href="https://discord.com/">
+      <div class="thumb">💛</div>
+      <div class="info">
+        <strong>MEU SERVIDOR DISCORD 🎉</strong>
+        <p>Discord Server • Free to join</p>
+      </div>
+    </a>
+
+    <a class="link" href="https://discord.com/">
+      <div class="thumb">🔥</div>
+      <div class="info">
+        <strong>SENSI QUE EU USO 👇</strong>
+        <p>Discord Server • Free to join</p>
+      </div>
+    </a>
+
+    <a class="link" href="#">
+      <div class="thumb">💠</div>
+      <div class="info">
+        <strong>CONTATO / PIX</strong>
+        <p>Mande uma mensagem</p>
+      </div>
+    </a>
+
+  </div>
+
+  <!-- REDES SOCIAIS -->
+  <div class="socials">
+    <a href="https://instagram.com/">◎</a>
+    <a href="https://tiktok.com/">♪</a>
+    <a href="https://youtube.com/">▶</a>
+  </div>
+
+  <footer>
+    Minha página de links
+  </footer>
+
+</div>
+
+</body>
+</html>
